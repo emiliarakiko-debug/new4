@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Для Love ❤️</title>
@@ -159,24 +163,16 @@ h2 {
     position: absolute;
     left: 50%;
     top: 52%;
-
     transform: translate(-50%,-50%);
-
     border: none;
     border-radius: 50px;
-
     background: #173d2b;
     color: white;
-
     padding: 18px 30px;
-
     font-size: 17px;
     font-weight: bold;
-
     cursor: pointer;
-
     box-shadow: 0 12px 30px rgba(23,61,43,.25);
-
     transition: .25s;
 }
 
@@ -187,9 +183,7 @@ h2 {
 .message {
     min-height: 30px;
     margin-top: 15px;
-
     text-align: center;
-
     font-family: Georgia, serif;
     font-size: 19px;
     color: #173d2b;
@@ -227,21 +221,25 @@ h2 {
     font-weight: normal;
 }
 
-
+/* ДВЕ ФОТОГРАФИИ */
 
 .certificate-images {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-top: 25px;
+    gap: 25px;
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
 }
 
 .certificate-image {
-    width: 70%;
-    max-width: 500px;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     display: block;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(20,50,35,.15);
 }
 
 /* КАРТОЧКИ */
@@ -256,7 +254,6 @@ h2 {
     border-radius: 30px;
     padding: 35px;
     min-height: 300px;
-
     background: #173d2b;
     color: white;
 }
@@ -303,12 +300,9 @@ footer strong {
 .confetti {
     position: fixed;
     top: -20px;
-
     width: 9px;
     height: 15px;
-
     z-index: 100;
-
     animation: fall 3s linear forwards;
 }
 
@@ -318,7 +312,6 @@ footer strong {
         transform:
             translateY(110vh)
             rotate(720deg);
-
         opacity: 0;
     }
 
@@ -348,29 +341,14 @@ footer strong {
         min-height: 260px;
     }
 
-}
-.certificate-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 850px;
-    margin: 25px auto;
-}
-
-.certificate-image {
-    width: 100%;
-    display: block;
-    border-radius: 20px;
-}
-
-@media(max-width:700px) {
-    .certificate-images {
-        grid-template-columns: 1fr;
+    .certificate-image {
+        width: 92%;
+        max-width: 600px;
     }
+
 }
 
 </style>
-
 
 </head>
 
@@ -384,25 +362,35 @@ footer strong {
 <div class="hero-content">
 
 <div class="label">
+
 Особенно важная страница
+
 </div>
 
 <h1>
-Павел,<br>
+
+Love,<br>
+
 это тебе ❤️
+
 </h1>
 
 <p>
+
 Сегодня день рождения у одного очень хорошего человека.
+
 <br><br>
 
 И у нас есть маленький подарок...
 
 Но сначала его нужно заслужить 😏
+
 </p>
 
 <div class="scroll">
+
 ↓ Листай ниже
+
 </div>
 
 </div>
@@ -417,11 +405,15 @@ footer strong {
 <div class="container center">
 
 <div class="kicker">
+
 Уровень 1 · Самый важный
+
 </div>
 
 <h2>
+
 Найди свой подарок
+
 </h2>
 
 <p class="description">
@@ -429,11 +421,13 @@ footer strong {
 Есть только одна маленькая проблема...
 
 Кнопка решила проверить,
+
 действительно ли ты именинник.
 
 Не переживай.
 
 Она всего лишь немного...
+
 <b>шустрая 😈</b>
 
 </p>
@@ -444,11 +438,15 @@ footer strong {
 <div class="game-header">
 
 <div class="badge">
+
 🎁 Секретный подарок
+
 </div>
 
 <div class="attempts" id="attempts">
+
 Попыток: 0 / 3
+
 </div>
 
 </div>
@@ -457,19 +455,23 @@ footer strong {
 <div class="arena" id="arena">
 
 <div class="instruction" id="instruction">
+
 Нажми на кнопку. Ну же 😏
+
 </div>
 
 <button id="giftButton">
+
 Забрать подарок
+
 </button>
 
 </div>
 
 
 <div class="message" id="message">
-</div>
 
+</div>
 
 </div>
 
@@ -478,23 +480,32 @@ footer strong {
 
 <div id="certificate">
 
-    
-
 <h2 class="certificate-title">
+
 Ладно… ты победил 🥹
+
 </h2>
+
 
 <div class="certificate-images">
 
-    <img src="IMG_1781.jpeg" 
-         alt="Подарочный сертификат"
-         class="certificate-image">
 
-    <img src="IMG_1782.jpeg" 
-         alt="Healing SPA"
-         class="certificate-image">
+<img
+src="https://emiliarakiko-debug.github.io/new4/IMG_1781.jpeg"
+alt="Подарочный сертификат"
+class="certificate-image"
+>
+
+
+<img
+src="https://emiliarakiko-debug.github.io/new4/IMG_1782.jpeg"
+alt="Healing SPA"
+class="certificate-image"
+>
+
 
 </div>
+
 
 <p class="description">
 
@@ -509,23 +520,15 @@ footer strong {
 <br><br>
 
 <b>
+
 Сертификат на SPA-программу «Русская баня»
+
 </b>
 
 <br>
 
 Тот самый подарок,
 
-ради которого стоило поймать эту вредную кнопку 😂
-
-</p>
-<b>
-Сертификат на SPA-программу «Русская баня»
-</b>
-
-<br>
-
-Тот самый подарок,
 ради которого стоило поймать эту вредную кнопку 😂
 
 </p>
@@ -551,16 +554,21 @@ footer strong {
 <div>
 
 <div class="kicker" style="color:#d9b66f">
+
 И немного от меня
+
 </div>
 
 <h3>
+
 С днём рождения, любимый!
+
 </h3>
 
 <p>
 
 Желаю тебе побольше моментов,
+
 когда никуда не надо спешить,
 
 поменьше поводов нервничать
@@ -578,7 +586,9 @@ footer strong {
 </div>
 
 <div class="signature">
+
 Твоя ❤️
+
 </div>
 
 </div>
@@ -589,11 +599,15 @@ footer strong {
 <div>
 
 <div class="kicker">
+
 Правило дня
+
 </div>
 
 <h3>
+
 Сегодня тебе можно всё.
+
 </h3>
 
 <p>
@@ -601,11 +615,13 @@ footer strong {
 Кроме одного:
 
 говорить, что подарок тебе
+
 не понравился.
 
 <br><br>
 
 Эта часть договора
+
 мелким шрифтом 😂
 
 </p>
@@ -613,7 +629,9 @@ footer strong {
 </div>
 
 <div class="signature">
+
 P.S. Я всё равно тебя люблю
+
 </div>
 
 </div>
@@ -633,16 +651,21 @@ P.S. Я всё равно тебя люблю
 <div class="container center">
 
 <div class="kicker">
+
 Последний секрет
+
 </div>
 
 <h2>
+
 Отдых тебе очень идёт.
+
 </h2>
 
 <p class="description">
 
 А если после баньки ты станешь
+
 ещё счастливее —
 
 значит, миссия выполнена на 100% ❤️
@@ -657,14 +680,14 @@ P.S. Я всё равно тебя люблю
 <footer>
 
 Сделано с любовью специально для
-<strong>Павла</strong>
+
+<strong>Love</strong>
 
 <br><br>
 
 День рождения ❤️
 
 </footer>
-
 
 
 <script>
@@ -731,9 +754,11 @@ function moveButton() {
     (maxY - minY);
 
 
-    button.style.left = x + "px";
+    button.style.left =
+    x + "px";
 
-    button.style.top = y + "px";
+    button.style.top =
+    y + "px";
 
 }
 
@@ -741,11 +766,13 @@ function moveButton() {
 function confetti() {
 
     const colors = [
+
         "#173d2b",
         "#d9b66f",
         "#ffffff",
         "#6d9b7c",
         "#c58b63"
+
     ];
 
 
@@ -880,4 +907,5 @@ function() {
 </script>
 
 </body>
+
 </html>
